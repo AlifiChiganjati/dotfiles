@@ -18,11 +18,12 @@ bspc config borderless_monocle false
 bspc config gapless_monocle false
 
 #auto start
+# polybar &
 numlockx on &
 xsetroot -cursor_name left_ptr &
 picom --config ~/.config/picom/picom.conf &
 feh --bg-fill --randomize ~/Pictures/Wallpapers &
 dunst &
-# polybar &
+brightnessctl s 25% &
 xautolock -time 5 -locker "betterlockscreen -l" -killtime 10 -killer "loginctl suspend" -detectsleep &
-brightnessctl s 30% &
+~/.config/scripts/check_xautolock.sh
