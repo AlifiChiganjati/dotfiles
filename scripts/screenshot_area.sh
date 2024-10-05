@@ -1,5 +1,11 @@
 #!/bin/bash
-FILENAME="screenshot_$(date +%F_%T)"
-grim -g "$(slurp)" ~/Pictures/Screenshots/$FILENAME.png
 
-notify-send "Screenshot Captured" "Select Area to Crop"
+FILENAME="screenshot_$(date +%F_%T)"
+
+AREA=$(slurp)
+
+if [ -n "$AREA" ]; then
+	grim -g "$AREA" ~/Pictures/Screenshots/$FILENAME.png
+
+	dunstify "Screenshot Captured" "Screen Area"
+fi
