@@ -17,18 +17,18 @@ while true; do
 		fi
 	done
 
-	echo "Running status: $running"
+	# echo "Running status: $running"
 
 	# Nonaktifkan atau aktifkan xautolock berdasarkan status aplikasi
 	if $running; then
 		if ! $xautolock_status; then
-			echo "Disabling xautolock"
+			# echo "Disabling xautolock"
 			xautolock -disable
 			xautolock_status=true
 		fi
 	else
 		if $xautolock_status; then
-			echo "Enabling xautolock"
+			# echo "Enabling xautolock"
 			xautolock -enable
 			xautolock_status=false
 		fi
