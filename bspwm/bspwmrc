@@ -25,7 +25,7 @@ bspc config gapless_monocle false
 	# feh --bg-fill --randomize ~/Pictures/Wallpapers &
 	dunst &
 	brightnessctl s 25% &
-	xautolock -time 5 -locker "betterlockscreen -l" -killtime 10 -killer "loginctl suspend" -detectsleep &
+	~/.config/scripts/xautolock.sh &
 	~/.config/scripts/check_xautolock.sh &
 } &
 
