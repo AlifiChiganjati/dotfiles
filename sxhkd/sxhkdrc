@@ -16,7 +16,7 @@ super + Escape
 
 # firefox or librewolf
 super + b
-	librewolf
+	firefox
 
 # ranger
 super + e

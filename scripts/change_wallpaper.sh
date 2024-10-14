@@ -11,5 +11,4 @@ fi
 
 swww query || swww-daemon
 
-#change-wallpaper using swww
 swww img ${DIR}/${RANDOMPICS} --transition-fps 30 --transition-type random --transition-duration 3

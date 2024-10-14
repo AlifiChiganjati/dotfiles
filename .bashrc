@@ -86,7 +86,6 @@ gresetremote() {
 # -----------------------------------------------------
 
 alias Dbeaver="GDK_BACKEND=x11 dbeaver"
-alias Robo3t="GDK_BACKEND=x11 robo3t"
 
 # -----------------------------------------------------
 # AUTOSTART
