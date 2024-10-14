@@ -8,10 +8,4 @@ if test -z "${XDG_RUNTIME_DIR}"; then
 	fi
 fi
 
-# export WLR_RENDERER_ALLOW_SOFTWARE=1
-export QT_QPA_PLATFORM=wayland-egl
-export ELM_DISPLAY=wl
-export SDL_VIDEODRIVER=wayland
-export MOZ_ENABLE_WAYLAND=1
-
 dbus-run-session Hyprland
