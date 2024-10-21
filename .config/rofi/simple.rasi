@@ -1,0 +1,63 @@
+* {
+	bg: #151515;
+	bg-alt: #242424;
+
+	fg: #dedede;
+	fg-alt: #222;
+
+	accent-color: #315BEF;
+
+	background-color: transparent;
+	text-color: #dedede;
+	border-color: #656565;
+}
+
+window {
+	border: 2px;
+	border-color: #656565;
+	border-radius: 6px;
+	background-color: @bg;
+}
+
+entry {
+	padding: 0px 0px 0px 14px;
+	placeholder: "Search";
+    cursor: pointer;
+}
+
+inputbar {
+	background-color: @bg-alt;
+	padding: 8px 8px 8px 14px;
+	border: 0px 0px 2px 0px;
+}
+
+listview {
+	padding: 8px;
+}
+
+element {
+	orientation: horizontal;
+	children: [ element-icon, element-text ];
+	spacing: 5px;
+    padding: 5px;
+    vertical-align: 0.5;
+	border-radius: 4px;
+}
+
+element selected.normal {
+	background-color: @accent-color;
+	text-color: @fg;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    text-color:       inherit;
+}
+
+element-text {
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 20px;
+}
