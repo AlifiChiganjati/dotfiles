@@ -31,13 +31,19 @@ sudo mv login/issue /etc/issue
 move all configs:
 
 ```bash
-mv * ~/.config/
+mv .config/* ~/.config/
 ```
 
 copy .bashrc:
 
 ```bash
 cp .bashrc ~/.bashrc
+```
+
+add start on tty:
+
+```
+cp start ~/
 ```
 
 # Config BSPWM
