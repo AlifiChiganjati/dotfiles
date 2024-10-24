@@ -1,19 +1,6 @@
 # Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
-# Inserts a blank line between shell prompts
-add_newline = true
-
-# Timeout for commands executed by starship (in milliseconds).
-command_timeout = 3600000
-
-# Ignore global command_timeout setting and keep running external commands, no matter how long they take.
-#ignore_timeout = true
-
-# Timeout for starship to scan files (in milliseconds).
-scan_timeout = 500
-
-# ~/.config/starship.toml
 format = """
 $username\
 $hostname\
@@ -68,51 +55,77 @@ $battery\
 $character
 """
 
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Timeout for commands executed by starship (in milliseconds).
+command_timeout = 3600000
+
+# Ignore global command_timeout setting and keep running external commands, no matter how long they take.
+#ignore_timeout = true
+
+# Timeout for starship to scan files (in milliseconds).
+scan_timeout = 500
 
 [directory]
-format = '[$path ]($style)'
+format = "[$path ]($style)"
 read_only = "🔒"
 read_only_style = "red"
 truncation_length = 3
-truncation_symbol = '…/'
+truncation_symbol = "…/"
 truncate_to_repo = false
 
 [directory.substitutions]
-'.config' = ' '
-'Documents' = '󰈙'
-'Downloads' = ' '
-'Music' = ' '
-'Pictures' = ' '
-'Videos' = ' '
-'Desktop' = ' '
-'Developments' = ' '
+".config" = " "
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Videos" = " "
+"Desktop" = " "
+"Developments" = " "
 
 [fill]
-symbol = " "
+symbol = "."
 
 [battery]
-full_symbol = '🔋 '
-charging_symbol = '⚡️ '
-discharging_symbol = '󰂃 '
-unknown_symbol = '󰁽 '
+full_symbol = "\uF240 "
+charging_symbol = "⚡️\uF242 "
+discharging_symbol = "\uF242 "
+unknown_symbol = "\uF241 "
+empty_symbol = "\uF244 "
+disabled = false
+format = '[ $symbol $percentage]($style) '
 
 [[battery.display]]
 threshold = 10
-charging_symbol = '⚡️ '
-discharging_symbol = '󰂎 '
 style = 'bold red'
+charging_symbol = "⚡️\uF244 "
+discharging_symbol = "\uF244 "
 
 [[battery.display]]
 threshold = 30
-charging_symbol = '⚡️ '
-discharging_symbol = '󰁽 '
 style = 'bold yellow'
+charging_symbol = "⚡️\uF243 "
+discharging_symbol = "\uF243 "
+
+[[battery.display]]
+threshold = 60
+style = 'bold green'
+charging_symbol = "⚡️\uF242 "
+discharging_symbol = "\uF242 "
+
+[[battery.display]]
+threshold = 80
+style = 'bold green'
+charging_symbol = "⚡️\uF241 "
+discharging_symbol = "\uF241 "
 
 [[battery.display]]
 threshold = 100
-charging_symbol = '⚡️ '
-discharging_symbol = '󰂃 '
 style = 'bold green'
+charging_symbol = "⚡️\uF240 "
+discharging_symbol = "\uF240 "
 
 [character]
 success_symbol = "[>](bold green)"
@@ -161,9 +174,6 @@ symbol = "deno "
 
 [dotnet]
 symbol = ".NET "
-
-# [directory]
-# read_only = " ro"
 
 [docker_context]
 symbol = "docker "
@@ -308,11 +318,11 @@ style = "bold white"
 format = "[$time]($style)"
 
 [cmd_duration]
-format = "[$duration]($style) "
+format = "⏱ [$duration]($style) "
 style = "yellow"
 
 [jobs]
-symbol = ""
+symbol = " "
 style = "bold red"
 number_threshold = 1
 format = "[$symbol]($style)"
