@@ -51,7 +51,7 @@ cp start ~/
 ## Artix/Arch Linux
 
 ```bash
-yay -S xorg xorg-xinit dunst libnotify eza cmatrix-git ranger bspwm sxhkd fastfetch htop kitty picom polybar rofi neovim xclip arandr slurp scrot starship xautolock betterlockscreen brightnessctl numlockx feh librewolf libreoffice hyprland wayland hyprlock hyprpaper hyprpicker hypridle wl-clipboard python-pillow swww
+yay -S xorg xorg-xinit dunst libnotify eza cmatrix ranger bspwm sxhkd fastfetch htop kitty picom polybar rofi neovim xclip arandr slurp grim scrot starship xautolock betterlockscreen brightnessctl numlockx feh firefox-bin libreoffice hyprland wayland hyprlock hyprpaper hyprpicker hypridle wl-clipboard python-pillow swww xsel clipman polkit-gnome
 ```
 
 ## Void linux
