@@ -5,10 +5,6 @@ PICS=($(ls ${DIR}))
 
 RANDOMPICS=${PICS[$RANDOM % ${#PICS[@]}]}
 
-if [[ $(pidof swaybg) ]]; then
-	pkill swaybg
-fi
-
 swww query || swww-daemon
 
 swww img ${DIR}/${RANDOMPICS} --transition-fps 30 --transition-type random --transition-duration 3

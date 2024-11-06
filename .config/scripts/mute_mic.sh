@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 if pactl get-source-mute @DEFAULT_SOURCE@ | grep -q 'Mute: yes'; then
 	pactl set-source-mute @DEFAULT_SOURCE@ 0
