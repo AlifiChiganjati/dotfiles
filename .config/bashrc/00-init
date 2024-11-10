@@ -12,3 +12,8 @@ PS1='[\u@\h \W]\$ '
 # export EDITOR='nvim'
 # export DISPLAY=:0.0
 # export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+
+# -----------------------------------------------------
+# Starship Prompt
+# -----------------------------------------------------
+eval "$(starship init bash)"

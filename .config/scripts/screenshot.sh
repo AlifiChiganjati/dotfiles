@@ -3,4 +3,4 @@
 FILENAME="screenshot_$(date +%F_%T)"
 grim ~/Pictures/Screenshots/$FILENAME.png
 
-dunstify "Screenshot Captured" "Fullscreen"
+dunstify -r 8 "Screenshot Captured" "Fullscreen"

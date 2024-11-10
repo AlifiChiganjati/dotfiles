@@ -9,4 +9,4 @@ if [ "$VOLUME" -gt 100 ]; then
 	VOLUME=100
 fi
 
-dunstify "Volume" "Increased to $VOLUME%" -i audio-volume-high
+dunstify -r 4 "Volume" "Increased to $VOLUME%" -i audio-volume-high

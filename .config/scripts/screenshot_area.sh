@@ -7,5 +7,5 @@ AREA=$(slurp)
 if [ -n "$AREA" ]; then
 	grim -g "$AREA" ~/Pictures/Screenshots/$FILENAME.png
 
-	dunstify "Screenshot Captured" "Screen Area"
+	dunstify -r 9 "Screenshot Captured" "Screen Area"
 fi

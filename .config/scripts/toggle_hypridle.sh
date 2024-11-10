@@ -2,10 +2,10 @@
 
 if pgrep -x "hypridle" >/dev/null; then
 	killall hypridle
-	dunstify "Hypridle" "Disable"
+	dunstify -r 10 "Hypridle" "Disable"
 else
 	hypridle &
-	dunstify "Hypridle" "Enable"
+	dunstify -r 11 "Hypridle" "Enable"
 fi
 
 hyprctl reload
