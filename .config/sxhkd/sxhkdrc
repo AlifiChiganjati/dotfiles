@@ -159,7 +159,7 @@ XF86AudioMicMute
 #
 XF86MonBrightness{Up,Down}
   brightnessctl s 5%{+,-} && dunstify "Brightness" "$(brightnessctl -q g)%"
-  
+
 # lockscreen
 super + x
 	betterlockscreen -l dimblur
