@@ -138,11 +138,12 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-#audio
+# audio
 # Volume up
 XF86AudioRaiseVolume
   ~/.config/scripts/raise_volume.sh
 
+# Volume down
 XF86AudioLowerVolume
   ~/.config/scripts/lower_volume.sh
 
@@ -150,11 +151,15 @@ XF86AudioLowerVolume
 XF86AudioMute
   ~/.config/scripts/mute_volume.sh
 
+# Mic Mute/Unmute
+XF86AudioMicMute
+  ~/.config/scripts/mute_mic.sh
 
 # Brightness
 #
 XF86MonBrightness{Up,Down}
   brightnessctl s 5%{+,-} && dunstify "Brightness" "$(brightnessctl -q g)%"
+  
 # lockscreen
 super + x
 	betterlockscreen -l dimblur
