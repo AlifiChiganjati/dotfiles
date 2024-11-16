@@ -26,6 +26,8 @@ super + e
 super + w 
   feh --bg-fill --randomize ~/Pictures/Wallpapers 
 
+super + shift + i 
+  ~/.config/scripts/toggle_hypridle.sh
 # 
 # bspwm hotkeys
 #
