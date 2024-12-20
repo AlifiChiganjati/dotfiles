@@ -2,8 +2,8 @@
 
 if pgrep -x "pipewire" >/dev/null; then
 	killall pipewire
-	dunstify -r 12 "pipewire" "pipewire disabled"
+	dunstify -r 12 "Pipewire" "Disable"
 else
 	pipewire &
-	dunstify -r 13 "pipewire" "pipewire enabled"
+	dunstify -r 13 "Pipewire" "Enable"
 fi
