@@ -8,7 +8,7 @@
 
 alias yay="yay --sudo doas --sudoflags -- --save"
 alias Dbeaver="GDK_BACKEND=x11 dbeaver"
-alias Zoom="XDG_SESSION_TYPE=x11 zoom"
+alias Zoom="QT_QPA_PLATFORM=xcb zoom"
 
 # -----------------------------------------------------
 #  EZA
