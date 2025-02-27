@@ -22,7 +22,8 @@ configure_monitors() {
 		sleep 0.5
 
 		# Atur monitor eDP-1 (laptop)
-		hyprctl keyword monitor "eDP-1,preferred,auto,auto"
+		# hyprctl keyword monitor "eDP-1,preferred,auto,auto"
+		hyprctl keyword monitor "eDP-1, 1920x1080@60, 0x0, 1"
 
 		# Tunggu kembali agar konfigurasi selesai
 		sleep 0.5
@@ -36,7 +37,7 @@ configure_monitors() {
 	else
 
 		# Atur monitor eDP-1 sebagai satu-satunya monitor
-		hyprctl keyword monitor "eDP-1,preferred,auto,auto"
+		hyprctl keyword monitor "eDP-1, 1920x1080@60, 0x0, 1"
 
 		# Pastikan semua workspace ada di eDP-1
 		assign_workspaces "eDP-1" 1 10
