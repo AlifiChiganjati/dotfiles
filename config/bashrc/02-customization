@@ -1,0 +1,48 @@
+# -----------------------------------------------------
+# CUSTOMIZATION
+# -----------------------------------------------------
+
+# -----------------------------------------------------
+# Git
+# -----------------------------------------------------
+gnew() {
+	git checkout -b "$1"
+	git push -u origin "$1"
+}
+# Usage: gnew branch_name
+
+gquick() {
+	git commit -am "$1"
+	git push
+}
+# Usage: gquick "commit message"
+
+grebase() {
+	git fetch
+	git rebase origin/main
+}
+# Usage: grebase
+
+gsquash() {
+	git reset --soft HEAD~"$1"
+	git commit --amend
+}
+# Usage: gsquash 3 (to squash the last 3 commits)
+
+gupdate-fork() {
+	git fetch upstream
+	git checkout main
+	git merge upstream/main
+	git push origin main
+}
+# Usage: gupdate-fork
+
+grebasei() {
+	git rebase -i HEAD~"$1"
+}
+# Usage: grebasei 3 (to interactively rebase the last 3 commits)
+
+gresetremote() {
+	git fetch origin
+	git reset --hard origin/"$(git rev-parse --abbrev-ref HEAD)"
+}

@@ -1,0 +1,6 @@
+configuration {
+	modi: "drun,run";
+	show-icons: true;
+	font: "Open Sans 11.5";
+ }
+ @theme "nord"

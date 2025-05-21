@@ -1,0 +1,21 @@
+configuration {
+    font: "RobotoMono Nerd Font 12";
+
+    display-drun: "";
+    display-window: "";
+}
+
+@theme "simple"
+
+* {
+    accent-color: #315BEF;
+}
+
+window {
+	width: 45%;
+}
+
+listview {
+	lines: 12;
+}
+

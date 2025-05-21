@@ -1,0 +1,328 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+$username\
+$hostname\
+$directory\
+$git_branch\
+$git_state\
+$git_status\
+$git_metrics\
+$fill\
+$nodejs\
+$python\
+$aws\
+$bun\
+$c\
+$cobol\
+$conda\
+$crystal\
+$cmake\
+$daml\
+$dart\
+$deno\
+$dotnet\
+$docker_context\
+$elixir\
+$elm\
+$golang\
+$guix_shell\
+$java\
+$julia\
+$kotlin\
+$lua\
+$meson\
+$memory_usage\
+$nim\
+$nix_shell\
+$ocaml\
+$opa\
+$package\
+$perl\
+$php\
+$ruby\
+$rust\
+$swift\
+$scala\
+$terraform\
+$zig\
+$cmd_duration\
+$jobs\
+$time\
+$line_break\
+$battery\
+$character
+"""
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Timeout for commands executed by starship (in milliseconds).
+command_timeout = 3600000
+
+# Ignore global command_timeout setting and keep running external commands, no matter how long they take.
+#ignore_timeout = true
+
+# Timeout for starship to scan files (in milliseconds).
+scan_timeout = 500
+
+[directory]
+format = "[$path ]($style)"
+read_only = "🔒"
+read_only_style = "red"
+truncation_length = 3
+truncation_symbol = "…/"
+truncate_to_repo = false
+
+[directory.substitutions]
+".config" = " "
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = " "
+"Pictures" = " "
+"Videos" = " "
+"Desktop" = " "
+"Developments" = " "
+
+[fill]
+symbol = "."
+
+[battery]
+full_symbol = "\uF240 "
+charging_symbol = "⚡️ \uF242 "
+discharging_symbol = "\uF242 "
+unknown_symbol = "\uF241 "
+empty_symbol = "\uF244 "
+disabled = false
+format = '[ $symbol $percentage]($style) '
+
+[[battery.display]]
+threshold = 10
+style = 'bold red'
+charging_symbol = "⚡️ \uF244 "
+discharging_symbol = "\uF244 "
+
+[[battery.display]]
+threshold = 30
+style = 'bold yellow'
+charging_symbol = "⚡️ \uF243 "
+discharging_symbol = "\uF243 "
+
+[[battery.display]]
+threshold = 60
+style = 'bold green'
+charging_symbol = "⚡️ \uF242 "
+discharging_symbol = "\uF242 "
+
+[[battery.display]]
+threshold = 80
+style = 'bold green'
+charging_symbol = "⚡️ \uF241 "
+discharging_symbol = "\uF241 "
+
+[[battery.display]]
+threshold = 100
+style = 'bold green'
+charging_symbol = "⚡️ \uF240 "
+discharging_symbol = "\uF240 "
+
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[x](bold red)"
+vimcmd_symbol = "[<](bold green)"
+
+[git_commit]
+tag_symbol = " tag "
+
+[git_status]
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+[aws]
+symbol = "aws "
+
+[bun]
+symbol = "bun "
+
+[c]
+symbol = "C "
+
+[cobol]
+symbol = "cobol "
+
+[conda]
+symbol = "conda "
+
+[crystal]
+symbol = "cr "
+
+[cmake]
+symbol = "cmake "
+
+[daml]
+symbol = "daml "
+
+[dart]
+symbol = "dart "
+
+[deno]
+symbol = "deno "
+
+[dotnet]
+symbol = ".NET "
+
+[docker_context]
+symbol = "docker "
+
+[elixir]
+symbol = "exs "
+
+[elm]
+symbol = "elm "
+
+[git_branch]
+symbol = "git "
+
+[golang]
+symbol = "go "
+
+[guix_shell]
+symbol = "guix "
+
+[hg_branch]
+symbol = "hg "
+
+[java]
+symbol = "java "
+
+[julia]
+symbol = "jl "
+
+[kotlin]
+symbol = "kt "
+
+[lua]
+symbol = "lua "
+
+[nodejs]
+symbol = "nodejs "
+
+[memory_usage]
+symbol = "memory "
+
+[meson]
+symbol = "meson "
+
+[nim]
+symbol = "nim "
+
+[nix_shell]
+symbol = "nix "
+
+[ocaml]
+symbol = "ml "
+
+[opa]
+symbol = "opa "
+
+[os.symbols]
+Alpine = "alp "
+Amazon = "amz "
+Android = "andr "
+Arch = "rch "
+CentOS = "cent "
+Debian = "deb "
+DragonFly = "dfbsd "
+Emscripten = "emsc "
+EndeavourOS = "ndev "
+Fedora = "fed "
+FreeBSD = "fbsd "
+Garuda = "garu "
+Gentoo = "gent "
+HardenedBSD = "hbsd "
+Illumos = "lum "
+Linux = "lnx "
+Macos = "mac "
+Manjaro = "mjo "
+Mariner = "mrn "
+MidnightBSD = "mid "
+Mint = "mint "
+NetBSD = "nbsd "
+NixOS = "nix "
+OpenBSD = "obsd "
+openSUSE = "osuse "
+OracleLinux = "orac "
+Pop = "pop "
+Raspbian = "rasp "
+Redhat = "rhl "
+RedHatEnterprise = "rhel "
+Redox = "redox "
+Solus = "sol "
+SUSE = "suse "
+Ubuntu = "ubnt "
+Unknown = "unk "
+Windows = "win "
+
+[package]
+symbol = "pkg "
+
+[perl]
+symbol = "pl "
+
+[php]
+symbol = "php "
+
+[pulumi]
+symbol = "pulumi "
+
+[purescript]
+symbol = "purs "
+
+[python]
+symbol = "py "
+
+[raku]
+symbol = "raku "
+
+[ruby]
+symbol = "rb "
+
+[rust]
+symbol = "rs "
+
+[scala]
+symbol = "scala "
+
+[spack]
+symbol = "spack "
+
+[sudo]
+symbol = "sudo "
+
+[swift]
+symbol = "swift "
+
+[terraform]
+symbol = "terraform "
+
+[zig]
+symbol = "zig "
+
+[time]
+disabled = false
+style = "bold white"
+format = "[$time]($style)"
+
+[cmd_duration]
+format = "⏱ [$duration]($style) "
+style = "yellow"
+
+[jobs]
+symbol = " "
+style = "bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
