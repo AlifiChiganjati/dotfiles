@@ -57,7 +57,7 @@ yay -S xorg xorg-xinit dunst libnotify eza cmatrix ranger bspwm sxhkd fastfetch 
 ## Void linux
 
 ```bash
-sudo xbps-install -S xorg-minimal dunst libnotify eza cmatrix ranger bspwm sxhkd fastfetch htop kitty picom polybar rofi neovim xclip arandr slurp scrot starship xautolock betterlockscreen brightnessctl numlockx feh firefox libreoffice xsetroot speech-dispatcher python3-Pillow grim xsel clipman polkit-gnome xhost xauth wl-clipboard
+sudo xbps-install -S xorg-minimal dunst libnotify eza cmatrix ranger bspwm sxhkd fastfetch htop kitty picom polybar rofi neovim xclip arandr slurp scrot starship xautolock betterlockscreen brightnessctl numlockx feh libreoffice xsetroot speech-dispatcher python3-Pillow grim xsel clipman xhost xauth wl-clipboard
 ```
 
 # Inspirations
