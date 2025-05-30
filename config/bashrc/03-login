@@ -8,7 +8,7 @@ if [[ $(tty) == *"pts"* ]]; then
 else
 	echo
 	if [ -f /bin/hyprctl ]; then
-		echo "Start Hyprland with command ~/start/start-hyprland.sh"
+		echo "Start Hyprland with command start-hyprland"
 	fi
 	if [ -f /home/chigan/.xinitrc ]; then
 		echo "Start BSPWM X11 with command startx"

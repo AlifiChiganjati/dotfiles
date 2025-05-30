@@ -21,6 +21,7 @@ return {
             "typescriptreact",
             "vue",
             "blade",
+            "php",
           },
         },
       },
