@@ -2,10 +2,10 @@
 
 # Start up processes
 pgrep -x sxhkd >/dev/null || (sxhkd &)
-pgrep -x pipewire >/dev/null || (pipewire &)
+# pgrep -x pipewire >/dev/null || (pipewire &)
 
 # BSPWM config
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+# bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 #### BSPWM configuration ####
 #bspc config border_radius
@@ -41,9 +41,10 @@ bspc config urgent_border_color "#dd2727"
   # feh --bg-fill --randomize ~/Pictures/Wallpapers &
   dunst &
   brightnessctl s 20% &
-  /usr/libexec/polkit-gnome-authentication-agent-1 &
+  /usr/libexec/hyprpolkitagent &
   ~/.config/scripts/xautolock.sh &
-  # ~/.config/scripts/x11_dual_monitor.sh &
+  ~/.config/scripts/check_init_pipewire.sh &
+  ~/.config/scripts/x11_dual_monitor.sh &
   # ~/.config/scripts/check_xautolock.sh &
 } &
 

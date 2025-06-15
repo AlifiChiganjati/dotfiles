@@ -16,7 +16,7 @@ super + Escape
 
 # firefox or librewolf
 super + b
-	firefox
+	librewolf
 
 # ranger
 super + e
@@ -149,19 +149,19 @@ super + {Left,Down,Up,Right}
 # audio
 # Volume up
 XF86AudioRaiseVolume
-  ~/.config/scripts/raise_volume.sh
+  ~/.config/scripts/volume_increase.sh
 
 # Volume down
 XF86AudioLowerVolume
-  ~/.config/scripts/lower_volume.sh
+  ~/.config/scripts/volume_decrease.sh
 
 # Mute/Unmute
 XF86AudioMute
-  ~/.config/scripts/mute_volume.sh
+  ~/.config/scripts/volume_mute.sh
 
 # Mic Mute/Unmute
 XF86AudioMicMute
-  ~/.config/scripts/mute_mic.sh
+  ~/.config/scripts/mic_mute.sh
 
 # Brightness
 #

@@ -1,11 +1,15 @@
-  _                _        
- | |    ___   __ _(_)_ __   
- | |   / _ \\ / _' | | '_ \\  
- | |__| (_) | (_| | | | | | 
- |_____\\___/ \\__, |_|_| |_| 
-             |___/          
-  
-Today is \d \t @ \n
---------------------------------------------------------------
-\r (\l)
++-----------------------------------------------------+
+|               Software Engineer Shell               |
+|                                                     |
+|    System   : \s \r (\m)              |
+|    Hostname : \n                                  |
+|    Terminal : \l                                  |                                                       
+|						      |
+|    The code must be clean.                          |
+|    The logic must be clear.                         |
+|    The purpose must be meaningful.                  |
+|                                                     |
+|    "Simplicity is prerequisite for reliability."    |
+|                           — Edsger W. Dijkstra      |
++-----------------------------------------------------+
 
