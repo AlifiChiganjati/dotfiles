@@ -51,7 +51,7 @@ cp start ~/
 ## Artix/Arch Linux
 
 ```bash
-yay -S xorg xorg-xinit dunst libnotify eza cmatrix ranger bspwm sxhkd fastfetch htop kitty picom polybar rofi neovim xclip arandr slurp grim scrot starship xautolock betterlockscreen brightnessctl numlockx feh firefox-bin libreoffice hyprland wayland hyprlock hyprpaper hyprpicker hypridle wl-clipboard python-pillow swww xsel clipman polkit-gnome
+yay -S xorg xorg-xinit dunst libnotify eza cmatrix ranger bspwm sxhkd fastfetch htop kitty picom polybar rofi neovim xclip arandr slurp grim scrot starship xautolock betterlockscreen brightnessctl numlockx feh librewolf-bin libreoffice hyprland wayland hyprlock hyprpaper hyprpicker hypridle wl-clipboard python-pillow swww xsel clipman
 ```
 
 ## Void linux
@@ -64,7 +64,7 @@ sudo xbps-install -S xorg-minimal dunst libnotify eza cmatrix ranger bspwm sxhkd
 
 The configs have inspired me:
 
-- https://github.com/th1nhhdk
-- https://gitlab.com/stephan-raabe
+- <https://github.com/th1nhhdk>
+- <https://gitlab.com/stephan-raabe>
 
 and many more...
