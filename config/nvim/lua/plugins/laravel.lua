@@ -7,6 +7,8 @@ return {
       "tpope/vim-dotenv",
       "MunifTanjim/nui.nvim",
       "kevinhwang91/promise-async",
+      "jwalton512/vim-blade",
+      "saghen/blink.cmp",
     },
     ft = { "php" },
     cmd = { "Sail", "Artisan", "Composer", "Npm", "Yarn", "Laravel" },

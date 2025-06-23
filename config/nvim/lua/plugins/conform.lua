@@ -40,7 +40,7 @@ return {
       html = { "prettier" },
       css = { "prettier" },
       astro = { "prettier" },
-      php = { "pint" },
+      php = { "blade-formatter" },
       blade = { "blade-formatter" },
       sql = { "sqlfluff" },
     },
