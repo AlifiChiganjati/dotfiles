@@ -5,10 +5,10 @@ return {
     opts.linters_by_ft = {
       dockerfile = { "hadolint" },
       markdown = { "markdownlint-cli2" },
-      php = { "tlint" },
       sql = { "sqlfluff" },
       rust = { "bacon" },
-      blade = { "tlint" },
+      php = { "phpstan" },
+      blade = { "phpstan" },
     }
     opts.linters = {}
   end,

@@ -24,7 +24,7 @@ alias lt="eza --all --binary --icons --group --header --group-directories-first 
 # GIT
 # -----------------------------------------------------
 
-alias gs="git status"
+alias gstatus="git status"
 alias ga="git add"
 alias gc="git commit"
 alias gp="git push"
@@ -36,7 +36,7 @@ alias gcb="git checkout -b"
 alias gd="git diff --cached"
 alias grh="git reset --hard"
 alias grs="git reset --soft"
-alias gb="git branch -v"
+alias gb="git branch -vv"
 alias gf="git fetch --all"
 alias gcredential="git config credential.helper store"
 #alias gl="git log --all --decorate --oneline --graph"

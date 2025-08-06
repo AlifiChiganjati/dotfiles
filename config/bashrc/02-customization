@@ -46,3 +46,8 @@ gresetremote() {
 	git fetch origin
 	git reset --hard origin/"$(git rev-parse --abbrev-ref HEAD)"
 }
+
+gbdelete() {
+  git branch | rg -v "main" | xargs git branch -D
+  echo "✅ Deleted all local branches except 'main'"
+}
