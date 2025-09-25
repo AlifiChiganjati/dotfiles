@@ -80,7 +80,7 @@ return {
   end,
   dependencies = {
     {
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
       opts = function(_, opts)
         opts.ensure_installed = opts.ensure_installed or {}
         table.insert(opts.ensure_installed, "js-debug-adapter")
@@ -88,7 +88,7 @@ return {
     },
 
     {
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
       opts = { ensure_installed = { "delve" } },
     },
     {
@@ -96,7 +96,7 @@ return {
       opts = {},
     },
     {
-      "williamboman/mason.nvim",
+      "mason-org/mason.nvim",
       opts = { ensure_installed = { "java-debug-adapter", "java-test" } },
     },
   },
