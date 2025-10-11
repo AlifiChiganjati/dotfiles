@@ -1,7 +1,6 @@
 -- add pyright to lspconfig
 return {
   "neovim/nvim-lspconfig",
-  enabled = false,
   ---@class PluginLspOpts
   opts = {
     ---@type lspconfig.options
