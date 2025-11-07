@@ -7,6 +7,8 @@ return {
     "haydenmeade/neotest-jest",
     "marilari88/neotest-vitest",
     "V13Axel/neotest-pest",
+    "lawrence-laz/neotest-zig",
+    "sidlatau/neotest-dart",
   },
   keys = {
     {
@@ -19,7 +21,7 @@ return {
     {
       "<leader>tL",
       function()
-        require("neotest").run.run_last({ strategy = "dap" })
+        require("neotest").run.run_last({ strategy = "dap", suite = true })
       end,
       desc = "Debug Last Test",
     },
@@ -60,5 +62,7 @@ return {
     )
     table.insert(opts.adapters, require("neotest-pest"))
     table.insert(opts.adapters, require("rustaceanvim.neotest"))
+    table.insert(opts.adapters, require("neotest-zig"))
+    table.insert(opts.adapters, require("neotest-dart"))
   end,
 }
